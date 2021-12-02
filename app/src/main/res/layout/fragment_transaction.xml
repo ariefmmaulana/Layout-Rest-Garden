@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TransactionFragment">
+
+    <ImageView
+        android:id="@+id/iv_transaction_layout_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle_75"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iv_transaction_layout_white"
+        android:layout_width="411dp"
+        android:layout_height="580dp"
+        android:background="@drawable/ic_rectangle_76"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_transaction_nameGrave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="50dp"
+        android:text="@string/Name_Grave"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_transaction_townGrave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="50dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_transaction_nameGrave"
+        android:text="@string/Town_Grave"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/iv_transaction_rectangles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="165dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/ic_rectangle_82"/>
+
+    <TextView
+        android:id="@+id/tv_transaction_grave"
+        android:layout_width="222dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/fontpoppins"
+        android:text="@string/Grave"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_transaction_rectangles" />
+
+    <TextView
+        android:id="@+id/tv_transaction_paymentGrave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_transaction_grave"
+        android:text="@string/Payment_Grave"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/rectangleLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/ic_rectangle_94"/>
+
+    <TextView
+        android:id="@+id/tv_transaction_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_transaction_paymentGrave"
+        android:text="@string/Notes"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/te_transaction_notes_field"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="349dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/green"
+        app:boxStrokeColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_notes"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/te_transaction_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/green" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_transaction_paymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/te_transaction_notes_field"
+        android:text="Payment Method"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/iv_transaction_circle_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_paymentMethod"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_ellipse_20"/>
+
+    <Button
+        android:id="@+id/btn_transaction_transferBank"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/Transfer_Bank"
+        android:textSize="10dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_paymentMethod" />
+
+    <ImageView
+        android:id="@+id/iv_transaction_circle_ovo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_paymentMethod"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="213dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_ellipse_20"/>
+
+    <Button
+        android:id="@+id/btn_transaction_ovo"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple"
+        android:layout_marginEnd="40dp"
+        android:text="@string/Ovo"
+        android:textSize="10dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_paymentMethod" />
+
+    <ImageView
+        android:id="@+id/iv_transaction_circle_dana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_transaction_circle_transfer"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_ellipse_20"/>
+
+    <Button
+        android:id="@+id/btn_transaction_dana"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/Dana"
+        android:textSize="10dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_transaction_transferBank" />
+
+    <ImageView
+        android:id="@+id/iv_transaction_circle_linkaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_transaction_circle_ovo"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="213dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/ic_ellipse_20"/>
+
+    <Button
+        android:id="@+id/btn_transaction_linkAja"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/Link_Aja"
+        android:textSize="10dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_transaction_ovo" />
+
+    <TextView
+        android:id="@+id/tv_transaction_nominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_transaction_dana"
+        android:text="@string/Nominal"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/te_transaction_nominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_transaction_linkAja"
+        android:text="@string/Nominal_Value"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/iv_transaction_rectangle_Line"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="218dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/ic_rectangle_94"/>
+
+    <TextView
+        android:id="@+id/tv_transaction_paymentSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_transaction_nominal"
+        android:text="@string/Payment_Summary"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_transaction_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_transaction_paymentSummary"
+        android:text="@string/Price"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/te_transaction_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_transaction_paymentSummary"
+        android:text="@string/Price_Value"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_transaction_bookingFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_transaction_price"
+        android:text="@string/Booking_Fee"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/te_bookingFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintTop_toBottomOf="@id/te_transaction_price"
+        android:text="500.000"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/iv_transaction_rectangleLines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/ic_rectangle_94"/>
+
+    <TextView
+        android:id="@+id/tv_transaction_totalPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_transaction_bookingFee"
+        android:text="@string/Total_Payment"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/te_transaction_totalPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintTop_toBottomOf="@id/te_bookingFee"
+        android:text="@string/Total_Payment_Value"
+        android:fontFamily="@font/fontpoppins"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="205dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:text="@string/Booking"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/te_transaction_totalPayment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

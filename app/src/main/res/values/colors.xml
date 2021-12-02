@@ -10,6 +10,9 @@
 
     <color name="green">#4E9F3D</color>
     <color name="yellow">#FDF762</color>
+    <color name="blue">#058CEE</color>
+    <color name="purple">#AD4AA3</color>
+    <color name="red">#EB1037</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#4E9F3D</color>
 
 </resources>

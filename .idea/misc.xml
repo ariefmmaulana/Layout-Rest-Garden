@@ -3,12 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_icons8_logout_rounded_left_100_1.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/rounded_edittext.xml" value="0.190625" />
         <entry key="app/src/main/res/font/fontpoppins.xml" value="0.20153846153846153" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.159375" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.17447916666666666" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/card_view_booking_list.xml" value="0.17447916666666666" />
+        <entry key="app/src/main/res/layout/fragment_after_booking.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_booking_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_detail_booking.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_detail_grave.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_landing_page.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_list_grave.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_transaction.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/bottom_menu_nav.xml" value="0.17447916666666666" />
       </map>
     </option>
   </component>
